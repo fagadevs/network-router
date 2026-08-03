@@ -41,9 +41,11 @@ topology:
 
 La imagen inicia los servicios según los archivos encontrados en /config:
 
+```text
 frr.conf: inicia FRRouting.
 dnsmasq.conf: inicia dnsmasq.
 nftables.conf: carga las reglas de nftables.
 startup.sh: ejecuta comandos particulares del nodo, si existen.
+```
 
 Se puede omitir los archivos, no son obligatorios.
