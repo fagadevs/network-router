@@ -16,7 +16,7 @@ Imagen Ubuntu creada para laboratorios de redes con Docker y Containerlab.
 ## Descargar la imagen
 
 ```bash
-docker pull ghcr.io/fagadevs/network-router:1.0.0
+docker pull ghcr.io/fagadevs/network-router:latest
 ```
 
 ## Construir la imagen localmente
@@ -34,7 +34,7 @@ docker build -t network-router:local .
 topology:
   defaults:
     kind: linux
-    image: ghcr.io/fagadevs/network-router:1.0.0
+    image: ghcr.io/fagadevs/network-router:latest
     binds:
       - ./config/__clabNodeName__:/config:ro
 ```
